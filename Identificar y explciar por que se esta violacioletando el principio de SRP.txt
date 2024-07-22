@@ -1,0 +1,20 @@
+﻿Explicacion:
+
+
+.Persona: Solo maneja la información de una persona ya sea (nombre, edad, dirección, correo electrónico).
+.CorreoElectronicoService: Solo se encarga de enviar correos electrónicos.
+.PersonaPrinter: Solo se ocupa de imprimir los datos de la persona.
+
+.Cada clase está organizada en su propia carpeta.
+
+Por que se violenta el principio de SRP?
+
+La clase Persona está violando el SRP porque asume muchas responsabilidades:
+
+ Como:
+.Gestión de datos personales: Maneja atributos como nombre, edad, direccion y correoElectronico.
+.Envío de correos electrónicos: Tiene el método EnviarCorreoElectronico, que maneja la lógica para enviar correos.
+.Impresión de datos: Incluye el método ImprimirDatos, que imprime la información de la persona en la consola.
+
+
+
